@@ -1,0 +1,248 @@
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: large;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+nav {
+  background-color: #022174;
+  color: white;
+  display: grid;
+  grid-template-columns: 30% 60%;
+  -moz-column-gap: 10%;
+       column-gap: 10%;
+  padding: 0% 5%;
+}
+nav .array-inputs {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  place-content: center;
+  padding: 5% 0%;
+}
+nav .array-inputs #a_size {
+  padding: 5% 0%;
+}
+nav .array-inputs #a_speed {
+  padding: 5% 0%;
+}
+nav .array-inputs #a_generate {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 4% 0% 0% 0%;
+  padding-left: 16%;
+}
+nav .array-inputs #a_generate:hover {
+  cursor: pointer;
+}
+nav .header_right {
+  display: flex;
+  flex-direction: column;
+}
+nav .header_right .nav-heading {
+  display: inline-block;
+  font-size: xxx-large;
+  padding: 3% 0%;
+  
+}
+nav .header_right .algos {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  place-content: center;
+  padding: 2% 0%;
+}
+nav .header_right .algos button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  outline: none;
+  padding: 5% 0%;
+  font-size: 16px !important;
+}
+nav .header_right .algos button:hover {
+  background-color: blue;
+  cursor: pointer;
+}
+nav .header_right .algos .butt_locked {
+  background-color: transparent;
+  cursor: pointer;
+}
+nav .header_right .algos .butt_locked:hover {
+  background-color: transparent;
+  cursor: pointer;
+}
+nav .header_right .algos .butt_selected {
+  background-color: white;
+  color: green;
+}
+nav .header_right .algos .butt_selected:hover {
+  background-color: white;
+  cursor: pointer;
+}
+nav .header_right .algos .butt_unselected:hover {
+  background-color: blue;
+  cursor: pointer;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+}
+section .Complexity_Containers {
+  margin-top: 20%;
+}
+section .Complexity_Containers .Pair_Definitions {
+  margin-top: 20%;
+}
+section .Complexity_Containers .Pair_Definitions p {
+  display: inline;
+}
+section .Complexity_Containers .Pair_Definitions p.Sub_Heading {
+  font-size: medium;
+  text-transform: none;
+}
+section #Info_Cont1 {
+  padding: 5% 5%;
+  
+  
+}
+section #Info_Cont1 h3 {
+  text-decoration: underline;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+section #array_container {
+  display: flex;
+  width: 100%;
+  height: 70vh;
+}
+section #Info_Cont2 {
+  padding: 5% 10%;
+  
+}
+section #Info_Cont2 h3 {
+  text-decoration: underline;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.hide {
+  display: none;
+}
+
+@media (max-width: 1281px) {
+  .algos {
+    grid-template-columns: repeat(5,2fr) !important;
+  }
+  body{
+    background-color: lightblue;
+    
+  }
+}
+@media (max-width: 980px) {
+  .algos {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .algos button {
+    text-align: left;
+  }
+  body{
+    background-color: lightblue;
+    
+  }
+  section .Complexity_Containers .Pair_Definitions p.Sub_Heading {
+    font-size: 10px;
+    text-transform: none;
+  }
+  section .Complexity_Containers .Pair_Definitions p#Time_Worst, p#Time_Average, p#Time_Best{
+     font-size: 10px;
+  }
+  section .Complexity_Containers .Pair_Definitions p {
+    display: inline;
+  }
+  section #Info_Cont1 h3 {
+    text-decoration: underline;
+    font-size: 12px;
+  }
+  section #Info_Cont2 h3 {
+    text-decoration: underline;
+    font-size: 12px;
+  }
+
+}
+  @media (max-width: 479px) {
+    .algos {
+      grid-template-columns: repeat(1, 1fr) !important;
+    }
+    .algos button {
+      text-align: right;
+      font-size: small;
+    }
+    body{
+      background-color: lightblue;
+      
+    }
+   
+    section #array_container {
+      display: flex;
+      width: 100%;
+      height: 40vh;
+      
+    }
+    nav .header_right .nav-heading {
+      display: inline-block;
+      font-size: 20px;
+      padding: 4% 2% 2% 2%;
+    }
+    
+    section .Complexity_Containers .Pair_Definitions p.Sub_Heading {
+      font-size: 5px;
+      text-transform: none;
+    }
+    section .Complexity_Containers .Pair_Definitions p#Time_Worst, p#Time_Average, p#Time_Best{
+       font-size: 5px;
+    }
+    section .Complexity_Containers .Pair_Definitions p {
+      display: inline;
+    }
+
+   
+    section #Info_Cont1 {
+      padding: 4% 4%;
+    }
+    section #Info_Cont1 h3 {
+      text-decoration: underline;
+      font-size: 6px;
+    }
+    section .Complexity_Containers .Pair_Definitions p#Space_Worst, p#Space_Average, p#Space_Best{
+      font-size: 5px;
+   }
+   section .Complexity_Containers .Pair_Definitions p {
+     display: inline;
+   }
+
+  
+   section #Info_Cont2 {
+     padding: 4% 4%;
+   }
+   section #Info_Cont2 h3 {
+     text-decoration: underline;
+     font-size: 6px;
+   }
+   nav .array_inputs p, #a_generate{
+        font-size:small;
+        
+       
+   }
+   nav .array_inputs #a_size, p{
+    font-size:small;
+    padding-bottom: 0.5rem;
+    padding-left: 0.28rem;
+   }
+  
+}
+
+/*# sourceMappingURL=style.css.map */
